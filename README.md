@@ -39,7 +39,7 @@ Your CLI should support the following commands:
     2021-03-15 1
     26
     ```
-1. `extend {task_id} {quantity} {unit}` - Should extend the due date of the task identified by `{task_id}` by `{quantity}` number of `{unit}` time.  For example, `extend 5 1 day` would add one day to the due date on task 5.  `extend 6 -2 week` would shorten the due date of task 6 by two weeks.  So, if task 5 was due on `2021-03-03`, it would be due on `2021-03-04` as a result of the command.  If task 6 were due on `2021-03-03`, it would be due on `2021-02-17`.  If a task has no duedate when this call is made on it, it should behave as though the task were due today.  You should support the following units:
+1. `extend {task_id} {quantity} {unit}` - Should extend the due date of the task identified by `{task_id}` by `{quantity}` number of `{unit}` time.  For example, `extend 5 1 day` would add one day to the due date on task 5.  `extend 6 -2 week` would shorten the due date of task 6 by two weeks.  So, if task 5 was due on `2021-03-03`, it would be due on `2021-03-04` as a result of the command.  If task 6 were due on `2021-03-03`, it would be due on `2021-02-17` as a result of the command.  If a task has no duedate when this call is made on it, it should behave as though the task were due today.  You should support the following units:
     1. `day`
     1. `week`
     1. `month`
