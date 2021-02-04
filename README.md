@@ -26,7 +26,7 @@ Your CLI should support the following commands:
     1. `>datestring`, `<datestring` - any string that starts with a `>` and is in `YYYY-MM-DD` format (e.g. "2021-01-01") should filter out any tasks that have due dates before the specified time.  Any string that starts with a `<` and is in `YYYY-MM-DD` format (e.g. "2021-01-01") should filter out any tasks that have due dates after the specified time.  If multiple such strings are included, it should respect the instructions of all of them (this may result in an empty list returned).
     1. `|order` Any param that starts with `|` should be interpreted as an ordering parameters.  You can define your own list of strings for the "order" param, but you should support all the orders defined by the `TaskSortByType` type in the codebase (defined [here](https://pkg.go.dev/github.com/1set/todotxt#TaskSortByType))
     1. `completed`  If this string is included, output completed tasks at the end of the list, subject to all the same filters, separated from the other tasks by an empty line
-1. `completed` - lists all completed tasks.  It should accept the same filters as `ls`
+1. `completed` - lists all completed tasks.  It should accept the same filters as `ls`, with the difference that the `<datestring` and `>datestring` filters should apply to the "completed" date rather than the due date.
 1. `add {task_string}` - adds a task to the file  
 1. `rm {task_id}` - removes a task from the file
 1. `do {task_id}` - mark the task specified by the id as completed
