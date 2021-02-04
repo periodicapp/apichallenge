@@ -47,7 +47,7 @@ Your CLI should support the following commands:
 
 ## Other Requirements
 
-1. By default - i.e. in the absence of any other filters - output should be sorted primarily by priority, secondarily by due date, and tertiarily by created date.  Completed tasks should *always* be listed separately
+1. By default - i.e. in the absence of any other filters - output should be sorted primarily by priority, secondarily by due date, and tertiarily by created date.  Completed tasks should *always* be listed separately (when they are listed at all)
 
 ## Bonus Requirements
 
